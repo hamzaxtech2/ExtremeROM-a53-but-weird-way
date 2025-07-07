@@ -23,7 +23,7 @@ set -e
 # [
 GET_LATEST_FIRMWARE()
 {
-    curl -s --retry 5 --retry-delay 5 "https://fota-cloud-dn.ospserver.net/firmware/$REGION/$MODEL/version.xml" \
+    curl -s --retry 5 --retry-delay 5 "https://dl.samfwpremium.cloud/d258e65fd3ddfa569d8f2ac69f1864eePFrPM_A_GYgmmIt9d1Z2tAo5MDPf3Ya6E8XWBClRdwUKkS-cxowIBhxf6PAucXwr6CP86_GezBz7Rr_cyGbRcqYvCTm8uksrL_0pRSbVGl9EyLoJRhi3Am9VcpdRb2mnSgGRu_dImSOuEtVzbuhIO4ZXQzQz_6dalYAil26R_6KWrRPXxILN5TYwGAzrMhCRIn276wY8aIjxHpN2ievwO13Tdx6FJuFeVsF5odw2zRIyVHpwvQ3pp_PYg6WDpbCgT157cDrET5U8_U8PhChqyLh3QqS6D3ndqFeIENukUAoBekpN8Us5kc7dLO1UnUqGShySanzMO30vs3QbORcwWiulQQJBZayO0dmuQbzqGK6H4tY_29pCUclIYqx_ahuvHx-HWeV_gEcmnTYybzJTMhH7lCZ9u515LwSTMQ0WqO_I1d2I1oIbIWdLpH3Z9NBTnlrSjxmpXFX4XNI2KHb43RVA6AbxquA8KIoJS06XGSuqYPs0iSP0tjv0-WL2ur_QUpfEMJMrm8qpFK-I1klcABqg7N2gBNzsKViZpdhPieWSv1mKeZQF8G5eM8O4TDZt6Rj05RKb-zAgHZpRCjSeXcnNsmJm8JdUvf71i91d9xNlUFKB50WXsF3IZ6UFVCywerc3_xAwHxpMqtTpzy_s3r6bi-Aj7K92eFFdMMM4lViHTvE-bjxgCd8yGaJxbHfSRtzcLFVcYFxoHu_IpSFbO2QQ_6NQPRz8bhHkhiHJPjoCsaOCwcIrfktIVbMANdgjlwPC0jpSpYHpftpEuvcJMlIjSfxpeTrRKdI3d0elCFbE9N5cgnk4eJ9n6i0BaImUX2IHudWG-AipJsfME5xQsvFGmgHheSGbHvRapH2Eir01ww7-wGRaDMxhNEPZrqTJnAk3RUPw8ioibv7KAn0usl8XYJRhzWlgNP7qnhIMNm1bV4vAjn4k0-6qgVDtxwDik_BGLt7k97tFs1m_-9JpIEsL8ZKsV-nMzBzeFAYjjqcwwD0qdBG_vVsmZE3NNpyVTRxmmY4YHpSh_pdiREB7ZJ0VpF-ANiuNe3He9crn-u9sSKsliSpVtSWJx4kOf1gvLVHBrNmFNxxS6-LC1K9O-A?file_name=SAMFW.COM_SM-A536E_XME_A536EXXSEEYD9_fac.zip" \
         | grep latest | sed 's/^[^>]*>//' | sed 's/<.*//'
 }
 
